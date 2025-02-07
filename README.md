@@ -55,6 +55,7 @@ For software installation, visit:
 
 3️⃣ Flashing the Firmware
 Using ESPTool, run:
+
 esptool.py --port COMx --baud 115200 write_flash 0x00000 firmware.bin
 
 (Replace COMx with your actual port, e.g., COM3 on Windows or /dev/ttyUSB0 on Linux.)
