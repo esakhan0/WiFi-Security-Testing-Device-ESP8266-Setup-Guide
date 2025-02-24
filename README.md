@@ -30,7 +30,7 @@ This device allows you to:
 
 ✅ NodeMCU Flasher (for flashing the firmware)
 
-✅ Precompiled .bin Firmware File (Download below)
+✅ Precompiled .bin Firmware File (download above)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
