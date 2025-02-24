@@ -19,6 +19,7 @@ This device allows you to:
 📌 Note: This device does not come pre-flashed. Follow this guide to install the firmware.
 
 
+
 🛠️ What You’ll Need:
 
 ✅ Our Wifi Security Testing Device
