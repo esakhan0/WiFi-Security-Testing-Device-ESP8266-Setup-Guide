@@ -3,121 +3,45 @@ This guide is for educational and cybersecurity research purposes only.
 Ensure compliance with all applicable laws before using this software.
 The author is not responsible for misuse of this information.
 
-About This Project : This device is designed as an ESP8266-based WiFi Security Testing and Research Tool. It allows users to analyze, monitor, and improve their own network security.
+🔹 What is This?
+This tutorial will show you how to flash your ESP8266 WiFi Security Testing Device using NodeMCU Flasher and a pre-compiled .bin firmware file.
 
-✅ Supports ESP8266-based boards (NodeMCU, Wemos D1 Mini, etc.)
+This device allows you to:
+✅ Test & analyze WiFi security (on networks you own)
+✅ Learn about cybersecurity & ethical hacking
+✅ Experiment with IoT and open-source firmware
 
-✅ Open-source firmware for educational cybersecurity research
+📌 Note: This device does not come pre-flashed. Follow this guide to install the firmware.
 
-✅ OLED Display + Button control for on-device interaction
+🛠️ What You’ll Need
+✅ ESP8266 Development Board (NodeMCU, Wemos D1 Mini, etc.)
+✅ USB-C Cable (or Micro-USB, depending on your board)
+✅ Windows PC (Mac/Linux users can use esptool.py)
+✅ NodeMCU Flasher (for flashing the firmware)
+✅ Precompiled .bin Firmware File (Download below)
 
-📌 No software is preinstalled. Users must flash firmware manually.
+📥 Step 1: Download Required Files
+🔹 Download NodeMCU Flasher (download above)
+🔹 Download the Firmware (download above)
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🔧 Step 2: Flashing the Firmware Using NodeMCU Flasher
+1️⃣ Connect your ESP8266 to your PC via USB-C.
+2️⃣ Run NodeMCU Flasher and select your COM Port.
+3️⃣ Go to the Config tab and replace the default firmware with your .bin file.
+ 
+4️⃣ Click Gear Icon → Select firmware.bin.
+5️⃣ Go to the Advanced tab and set the baud rate to 115200.
+6️⃣ Click Flash and wait for the process to complete.
 
-🛠️ Hardware Requirements
-Before proceeding, ensure you have:
+Once finished, restart your ESP8266 (unplug & replug).
 
-ESP8266 board (NodeMCU, Wemos D1 Mini, etc.)
+📌 Troubleshooting Tips:
+If the flash fails, try a different USB port or cable.
+Make sure you installed the correct drivers for your ESP8266.
 
-USB cable (for flashing)
-
-Computer (Windows, Mac, or Linux)
-
-Flashing software (ESPTool or NodeMCU PyFlasher)
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-HOW TO FLASH FIRMWARE :
-
-This guide will show you how to install WiFi security research software onto your ESP8266. Look Below
-There is also a gui installation below these steps. (Beginners)
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-1️⃣ Install Required Tools
-To flash firmware, install:
-ESPTool (Python-based)
-"pip install esptool"
-
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-2️⃣ Download the Open-Source Firmware
-For software installation, visit:
-
-📌 Official Firmware Repository : https://github.com/spacehuhn/esp8266_deauther
-
-👉 Do not download or use this software on unauthorized networks.
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-3️⃣ Flashing the Firmware
-Using ESPTool, run:
-
-esptool.py --port COMx --baud 115200 write_flash 0x00000 firmware.bin
-
-(Replace COMx with your actual port, e.g., COM3 on Windows or /dev/ttyUSB0 on Linux.)
-
-Using NodeMCU PyFlasher:
-
-Select the ESP8266 board and COM port.
-
-Choose the firmware.bin file.
-
-Set baud rate to 115200.
-
-Click Flash.
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-4️⃣ Restart and Test Your Device
-
-Unplug and replug the ESP8266.
-
-The software should now be running.
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-🔹 How to Flash Firmware Using ESPFlasher.exe (Windows)
-
-1️⃣ Download & Install ESPFlasher
-
-📌 Download ESPFlasher.exe from:
-
-🔗 Official Download Link : https://github.com/Jason2866/ESP_Flasher/releases
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-2️⃣ Download the Open-Source Firmware
-
-For software installation, visit: https://github.com/spacehuhn/esp8266_deauther
-
-
-👉 Do not download or use this software on unauthorized networks.
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-3️⃣ Flash the Firmware
-
-SUB 1: Open ESPFlasher.exe
-
-SUB 2: Select the correct COM Port (Check Device Manager for Windows)
-
-SUB 3: Click Browse and select your firmware.bin file
-
-SUB 4: Click Flash and wait for completion
-
-SUB 5: Once done, restart your ESP8266
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-4️⃣ Restart and Test Your Device
-
-Unplug and replug the ESP8266.
-
-The software should now be running.
+🚀 Step 3: Testing Your Device
+Once flashed, your ESP8266 should boot into the new firmware.
+Follow the on-screen instructions on the OLED display (if applicable).
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
