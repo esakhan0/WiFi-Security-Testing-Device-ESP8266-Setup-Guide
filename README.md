@@ -7,6 +7,7 @@ The author is not responsible for misuse of this information.
 
 This tutorial will show you how to flash your ESP8266 WiFi Security Testing Device using NodeMCU Flasher and a pre-compiled .bin firmware file.
 
+
 This device allows you to:
 
 ✅ Test & analyze WiFi security (on networks you own)
@@ -16,6 +17,7 @@ This device allows you to:
 ✅ Experiment with IoT and open-source firmware
 
 📌 Note: This device does not come pre-flashed. Follow this guide to install the firmware.
+
 
 🛠️ What You’ll Need:
 
@@ -29,11 +31,13 @@ This device allows you to:
 
 ✅ Precompiled .bin Firmware File (Download below)
 
+
 📥 Step 1: Download Required Files
 
 🔹 Download NodeMCU Flasher (download above)
 
 🔹 Download the Firmware (download above)
+
 
 🔧 Step 2: Flashing the Firmware Using NodeMCU Flasher
 
@@ -51,11 +55,13 @@ This device allows you to:
 
 Once finished, restart your ESP8266 (unplug & replug).
 
+
 📌 Troubleshooting Tips:
 
 If the flash fails, try a different USB port or cable.
 
 Make sure you installed the correct drivers for your ESP8266.
+
 
 🚀 Step 3: Testing Your Device
 
